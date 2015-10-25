@@ -1,5 +1,5 @@
 # Elastic-VNF-Placement
-Elastic Virtual Network Function Placement
+This project is the source code of "Elastic Virtual Network Function Placement (EVNFP)" research paper published in 4th IEEE conference on Cloud Networking (CloudNet) 2015. 
 
 There are 4 folders:
 
