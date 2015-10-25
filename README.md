@@ -63,3 +63,7 @@ The command run the experiment by reading the configuration file config.ini (`-c
 - `-a random` for the Random algorithm
 
 [1] M. Ghaznavi, A. Khan, N. Shahriar, K. Alsubhi, R. Ahmed, R. Boutaba. Elastic Virtual Network Function Placement. IEEE International Conference on Cloud Networking (CloudNet). Niagara Falls (Canada), October 5-7, 2015.
+
+[2] Al-Fares, Mohammad, Alexander Loukissas, and Amin Vahdat. "A scalable, commodity data center network architecture." ACM SIGCOMM Computer Communication Review 38.4 (2008): 63-74.
+
+[3] Greenberg, Albert, et al. "VL2: a scalable and flexible data center network." ACM SIGCOMM computer communication review. Vol. 39. No. 4. ACM, 2009.
