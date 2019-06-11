@@ -1,18 +1,19 @@
 # Elastic-VNF-Placement
-This project is the source code of experimentation of "Elastic Virtual Network Function Placement (EVNFP)"[1] research paper published in 4th IEEE conference on Cloud Networking (CloudNet) 2015. The paper introduces Elastic Virtual Network Function Placement (EVNFP) problem and presents a model for minimizing operational costs in providing VNF services. In this model, the _elasticity overhead_ and the _trade-off between bandwidth and host resource consumption_ are considered together, while the previous works ignored this perspective of the problem. A solution called Simple Lazy Facility Location (SLFL) is proposed to optimize the placement of VNF instances in response to on-demand workload. SLFL solution is compared to First-Fit and Random placements.
+This repository releases the source-code and the simulator developed as part of "Elastic Virtual Network Function Placement (EVNFP)"[1] published in 4th IEEE conference on Cloud Networking (CloudNet) 2015. The paper introduces _Elastic Virtual Network Function Placement_ (EVNFP) problem and presents a mathematical model to optimize the operational costs in providing VNF services.
+In this model, the _elasticity overhead_ and the _trade-off between bandwidth and host resource consumption_ are considered together, while prior work ignored this perspective of the problem. We propose a solution called _Simple Lazy Facility Location_ (SLFL) to optimize the placement of VNF instances in response to on-demand workload. In our evaluation, we comapre SLFL with _First-Fit_ and _Random_ placements.
 
-This project contains four folders:
-- _Datacenter_: Source code to generate datacenter topology. Fattree and VL2 
-- _DemandGen_: Tools to generate demands.
-- _GraphTools_: Tools to generate graphs for the results after running the simulation!
-- _Source_: The implementation of SLFL, and simulation.
+This repository contains four folders:
+- _Datacenter_: Source code to generate datacenter topologies: Fattree and VL2.
+- _DemandGen_: Tools to generate service demands.
+- _GraphTools_: Tools to plot the results of the simulation!
+- _Source_: SLFL's implementation and the simulator.
 
 ## _Datacenter_ folder
-This folder contains the source code for generating data-center topologies. The source code uses Lemon graph library (https://github.com/bekaus/lemon-1.2.1). The following topologies are implemented.
+This folder contains the source code to generate data-center topologies. The source code uses Lemon graph library (https://github.com/bekaus/lemon-1.2.1). The following topologies are implemented.
 - Fat-tree [2]
 - VL2 [3]
 
-The `main.h` file provides a command tool to generate the fat-tree topology. A sample code for generating the fat-tree topology is (it is assumed that after the compilation the execution file is `DCTopo`):
+`main.h` implements a command tool to generate Fat-tree topology. For instance, to generate a fat-tree topology is (it is assumed that after the compilation the execution file is `DCTopo`):
 ```bash
 ./DCTopo -k 10 -l 1000 -h 8 -o dc.txt
 ```
