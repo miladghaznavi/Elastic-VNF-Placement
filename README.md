@@ -1,6 +1,6 @@
 # Elastic-VNF-Placement
 This repository releases the source-code and the simulator developed as part of "Elastic Virtual Network Function Placement (EVNFP)"[1] published in 4th IEEE conference on Cloud Networking (CloudNet) 2015. The paper introduces _Elastic Virtual Network Function Placement_ (EVNFP) problem and presents a mathematical model to optimize the operational costs in providing VNF services.
-In this model, the _elasticity overhead_ and the _trade-off between bandwidth and host resource consumption_ are considered together, while prior work ignored this perspective of the problem. We propose a solution called _Simple Lazy Facility Location_ (SLFL) to optimize the placement of VNF instances in response to on-demand workload. In our evaluation, we comapre SLFL with _First-Fit_ and _Random_ placements.
+In this model, the _elasticity overhead_ and the _trade-off between bandwidth and host resource consumption_ are considered together, while prior work ignored this perspective of the problem. We propose a solution called _Simple Lazy Facility Location_ (SLFL) to optimize the placement of VNF instances in response to on-demand workload. In our evaluation, we compare SLFL with _First-Fit_ and _Random_ placements.
 
 This repository contains four folders:
 - _Datacenter_: Source code to generate datacenter topologies: Fattree and VL2.
